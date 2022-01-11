@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="../css/customer.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <title>Customer</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" href="#">Add</a>
+            <a class="nav-link" href="customerSearch.html">Search</a>
+            <a class="nav-link" href="staff.html">Staff</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <form class="row g-3" name="add_customer" action="/customers/create" method="POST">
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputName"
+          placeholder="John"
+          value=""
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputLastName" class="form-label">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputLastName"
+          placeholder="Smith"
+          value=""
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="john.smith@gmail.com"
+          value=""
+        />
+      </div>
+      <div class="col-md-3">
+        <label for="inputPhone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="inputPhone" value=""/>
+      </div>
+      <div class="col-md-3">
+        <label for="inputDOB" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="inputDOB" value="" />
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="1234 Main St"
+          value=""
+        />
+      </div>
+      <div class="col-md-3">
+        <label for="inputSIN" class="form-label">Social Insurance Number</label>
+        <input type="text" class="form-control" id="inputSIN" value=""/>
+      </div>
+      <div class="col-md-3">
+        <label for="inputGender" class="form-label">Gender</label>
+        <select id="inputGender" class="form-select" v>
+          <option selected>Choose...</option>
+          <option value="">Male</option>
+          <option value="">Female</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress2"
+          placeholder="Apartment, studio, or floor"
+          value=""
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" value="" />
+      </div>
+      <div class="col-md-4">
+        <label for="inputProvine" class="form-label">Province</label>
+        <select id="inputProvince" class="form-select" value="">
+          <option selected value=""> Choose...</option>
+          <option value="">Alberta</option>
+          <option value="">British Columbia</option>
+          <option value="">Manitoba</option>
+          <option value="">New Brunswick</option>
+          <option value="">Newfoundland and Labrador</option>
+          <option value="">Northwest Territories</option>
+          <option value="">Nova Scotia</option>
+          <option value="">Nunavut</option>
+          <option value="">Prince Edward Island</option>
+          <option value="">Quebec</option>
+          <option value="">Saskatchewan</option>
+          <option value="">Yukon</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputPostal" class="form-label">Postal Code</label>
+        <input type="text" class="form-control" id="inputPostal" value="" />
+      </div>
+      <div class="col-12">
+        <label for="floatingTextarea2">Notes</label>
+      </div>
+      <div class="form-floating">
+        <textarea
+          class="form-control"
+          placeholder="Enter your notes here"
+          id="floatingTextarea2"
+          style="height: 100px"
+          value=""
+        ></textarea>
+      </div>
+
+      <div class="col-12">
+        <button id="register" type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </form>
+
+    
+  </body>
+</html>
